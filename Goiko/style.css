@@ -541,7 +541,7 @@ footer .full__logo{
     height: 20vh;
 }
 
-@media only screen and (max-width: 576px){
+@media screen and (min-width: 0px){
 
     /*Header*/
     .menuDesplegable {
@@ -647,10 +647,6 @@ footer .full__logo{
         margin: 50px 0;
     }
 
-    #articulos .container div div img {
-        height: n;
-    }
-
     #articulos .container div h2 {
         font-size: 28px;
         text-align: center;
@@ -702,7 +698,7 @@ footer .full__logo{
         width: 100%;
     }
 
-    .menuBlanco {
+    #friends .menuBlanco {
         width: 87%;
         text-align: center;
         font-size: 23px;     
@@ -711,7 +707,7 @@ footer .full__logo{
     /*Seccion 6*/
 
     #foodTruck .container div h2 {
-        font-size: 5rem;
+        font-size: 3rem;
         margin: 0;
     }
 
@@ -804,7 +800,7 @@ footer .full__logo{
 
     /*Footer*/
     footer {
-        height: 190vh;
+        height: 205vh;
     }
 
     footer .container {
@@ -826,10 +822,6 @@ footer .full__logo{
 
     footer .full__logo {
         height: 15vh;
-    }
-
-    .enlacesBordes a {
-        line-height: 0px;
     }
 
     footer .container div:nth-child(4) {
@@ -854,14 +846,273 @@ footer .full__logo{
     }
 
 }
-@media only screen and (max-width: 768px){
 
-   
+@media (min-width: 768px){
+
+/*Header*/
+.full__logo {
+    height: 12vh;
+    fill: white;
+}
+
+/*Seccion 1*/
+
+nav .menuBlanco {       
+    font-size: 20px;       
+}
+
+nav .menuRojo {
+    font-size: 20px;  
+    margin: 0px 10px;  
+}
+
+
+/*Seccion 3*/
+
+#articulos{
+    height: 185vh;
+}
+
+#articulos div .container{
+    flex-wrap: wrap;
+}
+
+#articulos .container div{
+    flex-wrap: wrap;
+}
+
+#articulos .container div div{
+    width: 40%;
+}
+
+#articulos .container div div:nth-child(1) {
+    margin-top: 40px;
+}
+
+#articulos .container div div:nth-child(2) {
+    margin: 0;
+    margin-top: 40px;
+}
+
+#articulos .container div h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#articulos .container div div:nth-child(3){
+    margin: 50px;
+}
+
+/*Seccion 5*/
+
+#friends .menuBlanco {
+    width: 20%;
+}
+
+/*Seccion 6*/
+
+#foodTruck .container div h2 {
+    font-size: 5rem;
+}
+
+/*Seccion 7*/
+
+#goikoCina {
+    height: 160vh;
+}
+
+#goikoCina .menuBlanco {
+    font-size: 25px;
+}
+
+/*Seccion 8*/
+
+#articulos2 {
+    height: 200vh;
+}
+
+#articulos2 div .container{
+    flex-wrap: wrap;
+}
+
+#articulos2 .container div{
+    flex-wrap: wrap;
+}
+
+#articulos2 .container div div{
+    width: 40%;
+}
+
+#articulos2 .container div div:nth-child(2) {
+    margin: 0;
+}
+
+#articulos2 .container div h2 {
+    margin: 0px;
+    font-size: 22px;
+}
+
+#articulos2 .container div div:nth-child(3){
+    margin-top: 50px;
+}
+
+/*Footer*/
+
+footer{
+    height: 150vh;
+}
+
+footer a {
+    line-height: 45px;
+}
+
+footer .container {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .container div:nth-child(2) {
+    width: 45%;
+}
+
+footer .container div:nth-child(3) {
+    width: 45%;
+}
+
+footer .enlacesBordes a {
+    font-size: 15px;
+    width: 100%;
+    line-height: 25px;
+}
 
 }
 
-@media only screen and (max-width: 992px){
+@media (min-width: 992px){
 
+    /*Header*/
+
+    nav div:nth-child(2) {
+        justify-content: space-around;
+    }
     
+    /*Seccion3*/
 
+    #articulos {
+        height: 110vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #articulos .container div div:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    #articulos .container div div:nth-child(2) {
+        margin: 0;
+        margin-top: 0px;
+    }
+
+    #articulos .container div div:nth-child(3) {
+        margin: 0px;
+    }
+
+    #articulos .container div {
+        flex-wrap: nowrap;
+    }
+
+    #articulos .container a{
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    #articulos .container div div{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    /*Seccion 4*/
+
+    #kevin .container h2 {
+        font-size: 50px;
+    }
+
+    #kevin .container img {
+        height: 25vh;
+    }
+
+    /*Seccion 5*/
+    #friends {
+        height: 90vh;
+    }
+
+    #friends .container {
+        flex-wrap: nowrap;
+    }
+
+    /*Seccion 7*/
+
+    #goikoCina {
+        height: 80vh;
+    }
+
+    #goikoCina .container {
+        flex-wrap: nowrap;
+    }
+
+    #goikoCina .container div:nth-child(1) {
+        text-align: left;
+    }
+
+    #goikoCina .menuBlanco {
+        width: 30%;
+    }
+
+    /*Seccion 8*/
+
+    #articulos2 {
+        height: 80vh;
+    }
+
+    #articulos2 .container div div:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    #articulos2 .container div div:nth-child(2) {
+        margin: 0;
+        margin-top: 0px;
+    }
+
+    #articulos2 .container div div:nth-child(3) {
+        margin: 0px;
+    }
+
+    #articulos2 .container div {
+        flex-wrap: nowrap;
+    }
+
+    #articulos2 .container a{
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    #articulos2 .container .menuBlanco {
+        margin: 40px 0;
+    }
+
+    #articulos2 .container div div{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    #articulos2 .container div h2 {
+        font-size: 20px;
+    }
+
+    /*Footer*/
+
+    footer{
+        height: 90vh;
+    }
 }

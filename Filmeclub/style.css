@@ -1,0 +1,2141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-boton: #F24333;
+    --color-cabecera: #BA1B1D;
+    --color-texto-pri: #F7F4F3;
+    --color-fondo: #04091C;
+    --color-seccion: #5B2333;
+    --color-sombra: 1px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--color-fondo);
+}
+
+/*
+============================
+    Estilos de Tipografías
+============================
+*/
+h1{
+    font-family: "Roboto Slab", serif;
+    color: var(--color-texto-pri);
+    text-shadow: var(--color-sombra);
+    font-size: 3.3rem;
+    font-weight: 400;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    text-shadow: var(--color-sombra);
+    color: var(--color-texto-pri);
+}
+
+.cabecera{
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+}
+
+.subtitulo{
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 50px 0;
+}
+
+.relleno{
+    color: var(--color-texto-pri);
+    font-family: "Poppins", sans-serif;
+    text-shadow: var(--color-sombra);
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 60px 0;
+}
+
+a{
+    font-family: "Poppins", sans-serif;
+    text-shadow: var(--color-sombra);
+    text-decoration: none;
+    color: var(--color-texto-pri);
+}
+
+ul{
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    color: var(--color-texto-pri);
+    text-shadow: var(--color-sombra);
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+li{
+    margin: 30px 0;
+    text-wrap:balance;
+}
+
+input,textarea{
+    padding: 1%;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #f7f4f367;
+    color: var(--color-texto-pri);
+    border: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+}
+
+/*
+=======================
+    Clases Repetidas
+=======================
+*/
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+.articulos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.botonRojo{
+    background-color: var(--color-boton);
+    color: var(--color-texto-pri);
+    font-family: "Poppins", sans-serif;
+    padding: 0.9% 2%;
+    text-shadow: var(--color-sombra);
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.fondo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.rojo{
+    color: var(--color-boton);
+}
+
+/*
+================
+    HEADER
+================
+*/
+header{
+    height: 13vh;
+    background-color: var(--color-cabecera);
+    display: flex;
+    align-items: center;
+        
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+
+            div a{
+                margin: 0 50px;
+                font-size: 1.80rem;
+                font-weight: 500;
+                font-family: "Roboto Slab", serif;
+            }
+
+            img{
+                height: 8vh;
+            }
+
+            div:nth-child(1){
+                width: 15%;
+            }
+
+            div:nth-child(2){
+                width: 80%;
+            }
+        }
+}
+
+/*
+================
+    MAIN
+================
+*/
+
+/*
+================
+    INICIO
+================
+*/
+
+/*Seccion 1 Inicio*/
+#estrenos{
+    height: 80vh;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        div img{
+            height: 38vh;
+            border-radius: 5px;
+            margin: 40px 20px;
+        }
+    }
+}
+
+/*Seccion 2 Inicio */
+#conocenos{
+    height: 70vh;
+    background-color: var(--color-seccion);
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+       
+        div{
+            div:nth-child(1){
+                width: 50%;
+            }      
+            div:nth-child(2){
+                width: 40%;
+            }           
+            img{
+                height: 70vh;
+            }
+        }
+}
+
+/*Seccion 3 Inicio */
+#servicios{
+    height: 85vh;
+
+    h2{
+        margin-bottom: 70px;
+    }
+        .container{     
+            div.articulos div{
+                display: flex;
+                flex-direction: column;
+                width: 31%;
+
+                img{
+                    border-radius: 10px;
+                    margin: 30px 0;
+                }
+                .botonRojo{
+                    padding: 2% 6%;
+                    margin: auto;
+                }
+                p{
+                    font-size: 1.3rem;
+                    text-align: center;
+                    margin: 0px;
+                }
+            }
+        }
+}
+
+/*Seccion 4 Inicio */
+#oferta{
+    height: 50vh;
+    background-color: var(--color-seccion);
+
+    p{
+       text-align: center;
+    }
+    img{
+        height: 50vh;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+
+        div:nth-child(1){
+            width: 50%;
+        }
+        div:nth-child(2){
+            width: 40%;
+        }
+    }
+}
+
+/*Seccion 5 Inicio*/
+#noticias{
+    height: 85vh;
+
+    .container{
+        div h2{
+            margin: 70px 0;
+        }
+        .cabecera{
+            text-align: left;
+        }
+        div.articulos{
+            div{
+                background-color: var(--color-seccion);
+                border-radius: 10px;
+                width: 31%;
+                height: 40vh;
+            }
+            h2{
+                font-weight: 400;
+                margin-bottom: 0;
+                margin: 40px 0;
+            }
+            img{
+                height: 40vh;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        } 
+    }
+
+}
+
+
+/*
+================
+    TIENDA
+================
+*/
+
+/*Seccion 1 Tienda */
+#tienda{
+    height: 100vh;
+
+    img{
+        height: 38vh;
+        border-radius: 5px;
+        margin: 40px 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        .espacio{
+            ::placeholder{
+                font-family: "Poppins", sans-serif;
+                font-size: 1.3rem;
+                color: var(--color-texto-pri);
+            }
+        }
+        div.tiendaProductos{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+
+            h2{
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+/*Seccion 2 Tienda */
+#generos{
+    height: 80vh;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-image: url("./img/fondo_tienda.png");
+        padding: 5%;
+        width: 100%;
+
+        div{
+            img{
+                height: 25vh;
+                border-radius: 5px;
+                margin: 30px 0;
+            }
+            a.botonRojo{
+                text-align: center;
+                padding: 4% 8%;
+            }
+        } 
+
+    }
+
+}
+
+/*Seccion 3 Tienda */
+#articulos{
+    height: 60vh;
+    justify-content: start;
+    background-color: var(--color-seccion);
+
+    p{
+        font-size: 1.2rem;
+        width: 80%;
+        margin: auto;
+    }
+    h2{
+        margin-bottom: 60px;
+    }
+    img{
+        height: 25vh;
+        filter: drop-shadow(0 0 0.75rem var(--color-fondo));
+    }
+    a.botonRojo{
+        text-align: center;
+        margin-top: 20px;
+        padding: 3% 4%;
+    }
+}
+
+/*Seccion 4 Tienda */
+#snack{
+    height: 90vh;
+    background-image: url("./img/noticia3.png");
+
+    h2{
+        margin-top: 70px;
+    }
+    .cabecera{
+        text-align: left;
+    }
+    p{
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+    img{
+        height: 40vh;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .container div.articulos{
+        div{
+            background-color: var(--color-seccion);
+            border-radius: 10px;
+            width: 31%;
+            height: 20vh;
+        }
+
+        h2{
+            font-weight: 400;
+            margin-bottom: 0;
+            margin: 40px 0;
+        }
+    } 
+
+}
+
+/*
+==================
+Alquiler de salas
+==================
+*/
+
+/*Seccion 1 Alquiler de salas*/
+#titulo{
+    height: 50vh;
+
+    .container{
+        display: flex;
+        flex-direction: column;       
+    }
+}
+
+/*Seccion 2 Alquiler de salas*/
+#alquiler{
+    height: 70vh;
+    background-color: var(--color-seccion);
+
+    h2{
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    p{
+        font-size: 2.2rem;
+        text-align: left;
+        margin: 60px 0;
+        text-wrap:balance;
+    }
+    a{
+        margin-right: 65px;
+        padding: 2% 2%;
+    }
+    img{
+        height: 70vh;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        div:nth-child(1){
+            width: 45%;
+        }
+        div:nth-child(2){
+            width: 50%;
+        }
+    }
+}
+
+/*Seccion 3 Alquiler salas*/
+#sala{
+    height: 70vh;
+
+    p{
+        font-size: 2.2rem;
+        margin: 60px 0;
+        text-align: center;
+        text-wrap:balance;
+    }
+    a{
+        margin-right: 65px;
+        padding: 2% 2%;
+        margin: auto;
+    }
+    img{
+        height: 50vh;
+        border-radius: 10px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        div:nth-child(1){
+            width: 40%;
+        }
+        div:nth-child(2){
+            width: 40%;
+            text-align: center;
+        }
+    }
+}
+
+/*Seccion 4 Alquiler salas*/
+#precio{
+    height: 70vh;
+    background-image: url("./img/servicio2.png");
+
+    img{
+        height: 50vh;
+    }
+    h2{
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    p{
+        text-align: center;
+        text-wrap:balance;
+        margin: auto;
+        width: 90%;
+        font-size: 1.8rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div:nth-child(1){
+            width: 40%;
+        }
+        div:nth-child(2){
+            width: 40%;
+            text-align: center;
+        }
+        div h2:nth-child(3){
+            margin: 25px 0;
+        }
+    }
+}
+
+/*Seccion 5 Alquiler salas*/
+#horario{
+    height: 70vh;
+    background-image: url("./img/servicio11.png");
+    
+    p{
+        margin: 60px 0;
+        text-wrap:balance;
+        font-size: 2rem;
+    }
+    img{
+        height: 20vh;
+    }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            div.hor{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                h2{
+                    font-size: 1.5rem;
+                    margin-left: 30px;
+                    width: 100%;
+                    font-family: "Poppins", sans-serif;
+                }
+
+                div.container:nth-child(2){
+                    margin-top: 40px;
+                }
+            }
+        }
+        .container>div:nth-child(1){
+            width: 40%;
+        }
+        .container>div:nth-child(2){
+            width: 40%;
+        }
+}
+
+
+/*
+================
+    Renta
+================
+*/
+
+/*Seccion 1 Renta*/
+#renta{
+    height: 80vh;
+
+    h2{
+        font-weight: 400;
+        font-size: 1.9rem;
+    }
+    img{
+        height: 25vh;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        .espacio{
+            line-height: 100px;
+            input{
+                margin: 80px 0;
+            }
+            ::placeholder{
+                font-family: "Poppins", sans-serif;
+                font-size: 1.3rem;
+                color: var(--color-texto-pri);
+            }
+        }
+
+        div.tiendaProductos{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+            }
+            h2{
+                font-weight: 400;
+                font-size: 1.6rem;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+/*Seccion 2 Renta*/
+#alquilados{
+    height: 100vh;
+    background-image: url("./img/oferta.png");
+
+        h2{
+            margin-bottom: 60px;
+        }
+        .container .articulos>div{
+            display: flex;
+            flex-direction: column;
+        }
+        .container .articulos{
+            justify-content: center;        
+            img{
+                height: 65vh;
+            }
+            .container{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+            a.botonRojo{
+                text-align: center;
+                margin-top: 20px;
+                width: 18%;
+            }
+        } 
+}
+
+
+/*Seccion 3 renta*/
+#recientes{
+    height: 90vh;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        div img{
+            height: 50vh;
+            border-radius: 5px;
+            margin: 40px 20px;
+        }
+    }
+}
+
+/*Seccion 4 renta*/
+#clasicos{
+    height: 90vh;
+    background-color: var(--color-seccion);
+
+    p{
+        font-size: 1.5rem;
+        margin: 40px 0;
+        text-align: center;
+        text-wrap:balance;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        div img{
+            height: 40vh;
+            border-radius: 5px;
+            margin: 40px 20px;
+        }
+    }
+}
+
+/*
+====================
+    subscripcion
+====================
+*/
+
+/*Seccion 1 subscripcion*/
+#planes{
+    height: 120vh;
+    background-image: url("./img/conocenos.png");
+
+    h2{
+        margin-bottom: 50px;
+    }
+    a.botonRojo{
+        width: 80%;
+        padding: 6% 3%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        .subscripciones{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 60%;
+            margin: auto;
+            gap: 50px;
+
+            div{
+                width: 34%;
+                border-radius: 10px;
+                padding: 2%;
+                text-align: center;
+                background-color: var(--color-seccion);
+                filter: drop-shadow(0 0 0.75rem var(--color-fondo));
+            }
+        }
+    }
+}
+
+/*Seccion 2 subscripcion*/
+#dudas{
+    height: 80vh;
+
+    img{
+        height: 40vh;
+        border-radius: 10px;
+    }
+    h2{
+        margin-bottom: 60px;
+    }
+    input[type=text],textarea,input[type=submit]{
+        line-height: 30px;
+    }
+    input[type=submit]{
+        width: 20%;
+        margin: auto;
+    }
+    input[type=submit]:hover{
+        background-color: var(--color-texto-pri);
+        color: var(--color-fondo);
+    }
+    label{
+        color: var(--color-texto-pri);
+        border: 0px;
+        font-size: 1.7rem;
+    }
+    textarea{
+        line-height: 60px;
+    }
+    .container>div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container>div div:nth-child(1){
+        width: 40%;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+    .container>div div:nth-child(2){
+        width: 40%;
+        text-align: center;
+    }
+}
+
+/*Seccion 3 Subscripcion*/
+#redes{
+    height: 90vh;
+    background-image: url("./img/sala2.png");
+
+    img{
+        height: 20vh;
+    }
+    h2{
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    p{
+        font-size: 1.8rem;
+        margin-top: 40px;
+        text-wrap:balance;
+        text-align: start;
+        width: 66%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .subscripciones{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+/*
+================
+    Footer
+================
+*/
+
+footer{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-cabecera);
+
+    h2{
+        font-family: "Roboto Slab", serif;
+        color:var(--color-texto-pri);
+        font-size: 1.9rem;
+    }   
+    a{
+        color: var(--color-texto-pri);
+        font-family: "Poppins", sans-serif;
+        text-shadow: var(--color-sombra);
+    } 
+    div.container{
+        display: flex;
+        justify-content: space-evenly;
+
+        div{
+            h2{
+                margin-bottom: 25px;
+            }
+            a{
+                font-size: 1.3rem;
+                display: block;
+            }
+        }
+    }
+}
+
+/*Responsive*/
+
+@media (min-width: 576px){
+
+/*
+====================
+    Header
+====================  
+*/
+
+header {
+    height: 16vh;
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    & nav {
+        div:nth-child(1) {
+            width: 100%;
+        }
+        div:nth-child(2) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        div a {
+            margin: 0; 
+            width: 100%;
+            font-size: 0.9rem;
+        }
+        img {
+            height: 8vh;
+        }
+    }
+}
+
+/*
+================================================
+    Seccion Inicio
+================================================
+*/
+
+    /*Seccion 1 Inicio*/
+    #estrenos {
+
+        height: 65vh;
+
+        & .container {
+            .botonRojo {
+                margin-top: 20px;
+            }
+            h1{
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            div img {
+                height: 20vh;
+                margin: 0;
+            }
+            div:nth-child(2){
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                gap: 20px;
+            }
+        }
+    }
+
+    /*Seccion 2 Inicio*/  
+        #conocenos{
+            height: 45vh;
+
+            .relleno{
+                font-size: 1.1rem;
+                margin: 30px 0;
+            }
+            .cabecera {
+                font-size: 1rem;
+            }   
+            ul {
+                font-size: 0.9rem;
+            }
+            li{
+                margin: 10px 0;
+            }
+            & div {
+                img {
+                    height: 45vh;
+                }
+            }
+        }
+
+    /*Seccion 3 Inicio*/
+        #servicios {
+            height: 45vh;
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 40px;
+            }
+            & .container {
+                & div.articulos div {
+                    p {
+                        font-size: 1rem;
+                        height: 10vh;
+                    }
+                }
+            }
+        }
+
+    /*Seccion 4 Inicio*/
+    #oferta {
+        .container {
+            .relleno{
+                font-size: 1.4rem;
+                margin: 30px 0;
+            }
+            .cabecera {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    /*Seccion 5 Inicio*/
+        #noticias {
+            height: 70vh;
+
+            & .container {
+                .cabecera {
+                    font-size: 3rem;
+                }
+                div h2 {
+                    margin: 40px 0;
+                }
+                & div.articulos {
+                    h2 {
+                        font-size: 1rem;
+                        padding: 1%;
+                    }
+                    img {
+                        height: 20vh;
+                    }
+                    div {
+                        height: 30vh;
+                    }
+                }
+            }
+        }
+
+        footer {
+            h2 {
+                font-size: 1.3rem;
+            }
+            & div.container {
+                & div {
+                    padding: 2%;
+                    a {
+                        font-size: 0.8rem;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+
+/*
+================================================
+    Seccion Tienda
+================================================
+*/
+
+    /*Seccion 1 Tienda*/
+    #tienda {
+        height: 115vh;
+        .subtitulo{
+            margin: 20px 0;
+        }
+        img{
+            height: 19vh;
+        }
+        & .container {
+            div.tiendaProductos {
+                flex-wrap: wrap;
+                justify-content: center;
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    /*Seccion 2 Tienda*/
+    #generos {
+        height: 80vh;
+
+        & .container {
+            .cabecera{
+                font-size: 3rem;
+            }
+            & div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                div{
+                    width: 30%;
+                }
+                img {
+                    height: 18vh;
+                }
+            }
+        }
+    }
+
+    /*Seccion 3 Tienda*/
+    #articulos{
+        height: 85vh;
+
+        .articulos{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            div{
+                width: 45%;
+            }
+        }
+        img{
+            height: 20vh;
+        }
+        h2{
+            margin: 15px 0;
+            margin-bottom: 40px;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .cabecera {
+            font-size: 1.7rem;
+        }
+    }
+
+    /*Seccion 4 Tienda*/
+    #snack{
+        height: 95vh;
+
+        .cabecera{
+            font-size: 3rem;
+            margin-top: 25px;
+        }
+        .subtitulo{
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        h2{
+            font-size: 1rem;
+            padding: 2%;
+        }
+        img{
+            height: 20vh;
+        }
+    }
+
+/*
+================================================
+    Seccion Renta
+================================================
+*/
+
+/*Seccion 1 Renta*/
+#renta {
+height: 100vh;
+    img{
+        height: 18vh;
+    }
+    & .container {
+        & div.tiendaProductos {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            h2 {
+                font-size: 1rem;
+            }
+            div {
+                width: 80%;
+            }
+        }
+        & .espacio {
+            input {
+                margin: 30px 0;
+            }
+        }
+    }
+}
+
+/*Seccion 2 Renta*/
+#alquilados{
+    height: 80vh;
+    .cabecera{
+        font-size: 3rem;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    & .container .articulos {
+        img {
+            height: 40vh;
+        }
+        a.botonRojo{
+            font-size: 0.8rem;
+        }
+        .container {
+            align-items: center;
+        }
+    }
+}
+
+/*Seccion 3 Renta*/
+#recientes {
+    height: 90vh;
+    .cabecera {
+        font-size: 3rem;
+        margin: 20px 0;
+    }
+    & .container {
+        div img {
+            height: 25vh;
+            margin: 10px 20px;
+        }
+    }
+}
+
+/*Seccion 4 Renta*/
+#clasicos{
+    height: 105vh;
+    .cabecera{
+        font-size: 3rem;
+        margin: 20px 0;      
+    }
+    p {
+        font-size: 1rem;
+        margin: 40px 0;
+    }
+    & .container {
+        div img {
+            height: 25vh;
+            margin: 10px 0;
+        }
+    }
+}
+
+/*
+================================================
+    Seccion Subscripcion
+================================================
+*/
+
+/*Seccion 2 Subscripcion*/
+#planes {
+    height: 105vh;
+    h2 {
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+    li{
+        font-size: 1rem;
+    }
+    & .container {
+        .subscripciones {
+            width: 80%;
+        }
+        & .subscripciones {
+            div {
+                width: 43%;
+            }
+        }
+    }
+}
+
+/*Seccion 3 Subscripcion*/
+#dudas{
+    height: 115vh;
+    .cabecera{
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .container>div {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .container>div div:nth-child(1) {
+        width: 80%;
+    }
+    .container>div div:nth-child(2) {
+        width: 80%;
+    }
+    img {
+        height: 30vh;
+    }
+}
+
+/*Seccion 4 Subscripcion*/
+#redes {
+    .subscripciones {
+        flex-wrap: wrap;
+    }
+    img {
+        height: 10vh;
+    }
+}
+
+/*
+================================================
+    Seccion Alquiler
+================================================
+*/
+
+/*Seccion 2 Alquiler*/
+#alquiler {
+    height: 70vh;
+    p {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+    img {
+        height: 70vh;
+    }
+    .cabecera {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    a {
+        margin: 10px 0;
+    }
+}
+
+/*Seccion 3 Alquiler*/
+#sala{
+    height: 90vh;
+    .cabecera{
+        font-size: 3rem;
+    }
+    .container{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    & .container {
+        div:nth-child(1) {
+            width: 60%;
+            text-align: center;
+        }
+    }
+    & .container {
+        div:nth-child(2) {
+            width: 100%;
+        }
+    }
+    img {
+        height: 30vh;
+    }
+    p {
+        font-size: 1.3rem;
+        margin: 20px 0;
+    }
+}
+
+/*Seccion 4 Alquiler*/
+#precio {
+    height: 90vh;
+
+    & .container {
+        flex-wrap: wrap;
+        gap: 50px;
+        div:nth-child(1) {
+            width: 100%;            
+        }
+    }  
+    img{
+        height: 20vh;
+    }
+    .cabecera {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/*Seccion 5 Alquiler*/
+#horario {
+    p {
+        font-size: 1.3rem;
+    }
+    img {
+        height: 15vh;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+    .cabecera{
+        font-size: 3rem;
+    }
+    & .container {
+        & div.hor {
+            h2 {
+                 margin-left: 0; 
+            }
+        }
+    }
+}
+
+}
+
+@media (min-width: 980px){
+
+/*
+====================
+    Header
+====================
+*/
+
+header {
+    height: 20vh;
+
+    & nav {
+        div a {
+            font-size: 1.4rem;
+        }
+        img {
+            height: 10vh;
+        }
+    }
+}
+
+    /*
+    ================================================
+        Seccion Inicio
+    ================================================
+    */
+    
+    /*Seccion 1 Inicio*/
+        #estrenos {
+            height: 75vh;
+            & .container {
+                h1 {
+                    font-size: 3.6rem;
+                    margin-bottom: 20px;
+                }
+
+                div img {
+                    height: 22vh;
+                }
+
+                div:nth-child(2) {
+                    width: 70%;
+                }
+            }
+        }
+
+    /*Seccion 2 Inicio*/
+        #conocenos {
+            .cabecera {
+                font-size: 2rem;
+            }
+
+            .relleno {
+                text-align: left;
+            }
+
+            li {
+                font-size: 1.3rem;
+            }
+        }
+
+    /*Seccion 3 Inicio*/ 
+        #servicios {
+            height: 65vh;
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 40px;
+            }
+        }
+
+    /*Seccion 4 Inicio*/
+        #oferta {
+            & .container {
+                .cabecera {
+                    font-size: 3rem;
+                }
+
+                .relleno {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+    /*Seccion 5 Inicio*/
+        #noticias {
+            height: 70vh;
+
+            & .container {
+                & div.articulos {
+                    img {
+                        height: 30vh;
+                    }
+                    h2 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+    /*
+    ================================================
+        Seccion Tienda
+    ================================================
+    */
+
+    /*Seccion 1 Tienda*/
+
+        #tienda {
+            height: 110vh;
+            img {
+                height: 25vh;
+            }
+        }
+
+    /*Seccion 2 Tienda*/
+
+    #generos {
+        height: 100vh;
+
+        & .container {
+            & div {
+                img {
+                    height: 21vh;
+                }
+            }
+        }
+    }
+
+    /*Seccion 4 Tienda*/
+
+    #snack {
+        height: 85vh;
+        img {
+            height: 25vh;
+        }
+
+        .cabecera {
+            margin-top: 55px;
+        }
+
+        & .container div.articulos {
+            h2 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    /*
+    ================================================
+        Seccion Renta
+    ================================================
+    */
+
+    /*Seccion 1 Renta*/
+    #renta {
+        height: 80vh;
+        & .container {
+            & div.tiendaProductos {
+                div {
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+    /*Seccion 3 Renta*/
+    #recientes {
+        height: 60vh;
+    }
+
+    #clasicos {
+        height: 65vh;
+        & .container {
+            div img {
+                height: 22vh;
+                margin: 10px 0;
+            }
+        }
+    }
+    
+    /*
+    ================================================
+        Seccion Subscripcion
+    ================================================
+    */
+
+    /*Seccion 2*/
+    #titulo {
+        height: 40vh;
+    }
+
+    #planes {
+        height: 95vh;
+        h2 {
+            margin-bottom: 60px;
+        }
+    }
+
+    /*Seccion 3*/
+
+    #dudas {
+        height: 70vh;
+        .container>div div:nth-child(1) {
+            width: 45%;
+        }
+        .container>div div:nth-child(2) {
+            width: 45%;
+        }
+    }
+
+    /*Seccion 4*/
+    #redes {
+        height: 60vh;
+    }
+
+    /*Footer*/
+    footer {
+        & div.container {
+            & div {
+                a {
+                    font-size: 1rem;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    /*
+    ================================================
+        Seccion Alquiler sala
+    ================================================
+    */
+
+    /*Seccion 2*/
+    #alquiler {
+        height: 55vh;
+        .cabecera {
+            font-size: 2rem;
+            margin-bottom: 0px;
+            margin: 40px 0;
+        }
+        img {
+            height: 55vh;
+        }
+    }
+
+    /*Seccion 3*/
+    #sala {
+        height: 60vh;
+        & .container {
+            div:nth-child(1) {
+                width: 45%;
+            }
+            div:nth-child(2) {
+                width: 45%;
+            }
+        }
+    }
+
+    /*Seccion 4*/
+    #precio {
+        height: 70vh;
+        img {
+            height: 40vh;
+        }
+        & .container {
+            div:nth-child(2) {
+                width: 45%;
+            }
+            div:nth-child(1) {
+                width: 45%;
+            }
+        }
+        p {
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+
+}  
+
+    @media (min-width: 1920px){
+        
+    /*
+    ====================
+        Header
+    ====================
+    */
+        header{
+            height: 13vh;
+            background-color: var(--color-cabecera);
+            display: flex;
+            align-items: center;         
+                nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: center;    
+                    div a{
+                        margin: 0 50px;
+                        font-size: 1.69rem;
+                        font-weight: 500;
+                        font-family: "Roboto Slab", serif;
+                    }
+                    img{
+                        height: 8vh;
+                    } 
+                    div:nth-child(1){
+                        width: 15%;
+                    }      
+                    div:nth-child(2){
+                        width: 80%;
+                    }
+                }
+        }
+
+    /*
+    ====================
+        Footer
+    ====================
+    */
+
+    footer{          
+        h2{
+            font-size: 1.9rem;
+        }               
+        div.container{
+            div{
+                a{
+                    font-size: 1.3rem;
+                }
+            }   
+        }  
+    }
+
+    /*
+    ================================================
+        Seccion INICIO
+    ================================================
+    */
+
+    /*Seccion 1 Inicio*/
+
+        #estrenos {
+            height: 80vh;
+            & .container {
+                h1 {
+                    font-size: 4rem;
+                }
+                div img {
+                    height: 38vh;
+                }
+                .botonRojo {
+                    font-size: 1.6rem;
+                }
+                div:nth-child(2) {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+
+    /*Seccion 2 Inicio*/
+        #conocenos{
+            height: 70vh;
+            & div {
+                img {
+                    height: 70vh;
+                }
+            }
+            .cabecera {
+                font-size: 3.6rem;
+            }
+            .relleno{
+                font-size: 2.1rem;
+                margin: 60px 0;
+            }
+            li{
+                font-size: 1.5rem;
+            }
+        }
+
+    /*Seccion 3 INICIO*/
+    #servicios{
+        height: 85vh;
+        .cabecera {
+            font-size: 3.6rem;
+        }
+        & .container {
+            & div.articulos div {
+                p {
+                    font-size: 2.1rem;
+                }
+                .botonRojo {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    /*Seccion 4 INICIO*/
+    #oferta{
+        height: 65vh;
+        img{
+            height: 65vh;
+        }
+        & .container {
+            .cabecera {
+                font-size: 3.6rem;
+            }
+            .relleno {
+                font-size: 2.1rem;
+            }
+            .botonRojo{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    /*Seccion 5 INICIO*/
+    #noticias{
+        height: 85vh;   
+        .container{  
+            div h2{
+                margin: 70px 0;
+            }
+            div.articulos{              
+                img{
+                    height: 40vh;
+                }
+            } 
+            & div.articulos {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }  
+    }
+
+    /*
+    ================================================
+        Seccion Tienda
+    ================================================
+    */
+
+    /*Seccion 1 Tienda*/
+    #tienda{
+        height: 70vh;
+    
+        h1{
+            margin-top: 40px;
+        }
+        img{
+            height: 38vh;
+        } 
+        .container{           
+            div.tiendaProductos{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    /*Seccion 2 tienda*/    
+    #generos {
+        & .container {
+            & div {
+                 flex-wrap: nowrap; 
+                 div {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    /*Seccion 3 tienda*/
+    #articulos{
+        height: 60vh;
+        justify-content: start;
+        background-color: var(--color-seccion);  
+        .articulos {
+            flex-wrap: nowrap;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        h2{
+            margin-bottom: 60px;
+        }
+        img{
+            height: 25vh;
+        }
+        .cabecera{
+            font-size: 3rem;
+        }  
+    }
+
+    /*Seccion 4 tienda*/
+    #snack{
+        height: 100vh;  
+        h2{
+            margin-top: 70px;
+        }     
+        img{
+            height: 40vh;
+        }
+        .container div.articulos{
+            div{
+                width: 31%;
+                height: 40vh;
+            }
+            h2{
+                margin: 40px 0;
+                font-size: 1.5rem;
+            }  
+        }    
+    }
+
+    /*
+    ================================================
+        Seccion Renta
+    ================================================
+    */
+
+    /*Seccion 1*/
+    #renta{
+        height: 80vh;    
+        h2{
+            font-weight: 400;
+            font-size: 1.9rem;
+        }   
+        img{
+            height: 25vh;
+        }  
+        .container{             
+            .espacio{  
+                input{
+                    margin: 80px 0;
+                }    
+            }  
+            div.tiendaProductos{
+                justify-content: space-evenly;  
+                div{
+                    width: 30%;
+                }
+                h2{
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    /*Seccion 2*/
+    #alquilados{
+        height: 100vh; 
+            h2{
+                margin-bottom: 60px;
+            }
+            .container .articulos{            
+                img{
+                    height: 65vh;
+                }
+                a.botonRojo{
+                    font-size: 1.2rem;
+                }
+            } 
+    }
+
+    /*Seccion 3*/
+    #recientes{
+        height: 90vh;
+        .container{
+            div img{
+                height: 50vh;
+                border-radius: 5px;
+                margin: 40px 20px;
+            }
+        }
+    }
+
+    /*Seccion 4*/
+    #clasicos{
+        height: 90vh;
+        p{
+            font-size: 1.5rem;
+            margin: 40px 0;
+        }    
+        .container{  
+            div img{
+                height: 40vh;
+                margin: 40px 20px;
+            } 
+        }
+    }
+
+    /*
+    ================================================
+        Seccion Subscripcion
+    ================================================
+    */
+
+    /*Seccion 2*/
+    #planes{
+        height: 115vh;
+        li {
+            font-size: 1.3rem;
+        }
+        a.botonRojo {
+            font-size: 1.3rem;
+        }
+        h2{
+            margin-bottom: 50px;
+        } 
+        .container{              
+            .subscripciones{
+                width: 60%;        
+                div{
+                    width: 30%;                    
+                }
+            }
+        }
+    }
+
+    /*Seccion 3*/
+    #dudas{
+        height: 70vh;
+        img{
+            height: 40vh;
+        }
+        .cabecera {
+            margin-bottom: 40px;
+        }        
+    }
+
+    /*Seccion 4*/
+    #redes{
+        height: 70vh;
+        img{
+            height: 20vh;
+        }   
+    }
+
+    /*
+    ================================================
+        Seccion Alquiler
+    ================================================
+    */
+
+    /*Seccion 2*/
+    #alquiler{
+        height: 70vh;    
+        p{
+            font-size: 2.2rem;        
+        } 
+        a{
+            margin-right: 65px;
+        }
+        img{
+            height: 70vh;
+        }    
+    }
+
+    /*Seccion 3*/
+
+    #precio{
+        height: 70vh;
+        img{
+            height: 50vh;
+        } 
+        p{                   
+            font-size: 1.8rem;
+        }           
+    }
+
+    /*Seccion 4*/
+    #horario{
+        height: 70vh;    
+        p{
+            font-size: 2rem;
+        }
+        img{
+            height: 20vh;
+        }
+            .container{                  
+                div.hor{                  
+                    h2{
+                        font-size: 1.5rem;                   
+                    }                     
+                }
+            }            
+    }
+
+    /*Seccion 5*/
+    #sala{
+        height: 70vh;    
+        p{
+            font-size: 2.2rem;
+            margin: 60px 0;
+        }
+        img{
+            height: 50vh;
+        }          
+    }
+}
